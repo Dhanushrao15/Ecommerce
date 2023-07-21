@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>LoginPage</title>
+</head>
+<style>
+    img {
+        float: left;
+    }
+
+    div {
+        padding: 10px;
+
+    }
+</style>
+
+<body>
+    <img src="Amazon.jpeg" height="100px">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Homepage.html">Amazon Sales </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            List of Products
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="Productdetail.html">Electronics</a></li>
+                            <li><a class="dropdown-item" href="Productdetails.html">Clothing</a></li>
+                            <li><a class="dropdown-item" href="Productdetails.html">Watches</a></li>
+                            <li><a class="dropdown-item" href="Productdetails.html">Beauty</a></li>
+                            <li><a class="dropdown-item" href="Productdetails.html">Appliances</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="LoginPage.html">Login</a>
+                    </li>
+
+                    </form>
+            </div>
+
+        </div>
+    </nav>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-7" style="padding: 100px;">
+                <img src="amazon.jpg" height="500px" width="500px">
+            </div>
+            <div class="col-3">
+                <div class="container">
+                    <div class="row">
+                        <form name="myForm" onsubmit="return validateForm()" method="post">
+                            <div class="col">
+                                <label for="name">Name:</label>
+                                <input type="text" name="name" id="name" required><br>
+                            </div>
+                            <div class="col">
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" required><br>
+                            </div>
+                            <div class="col">
+                                <label for="password">Password:</label>
+                                <input type="password" name="password" id="password" required><br>
+                            </div>
+                            <div class="col">
+
+                                <label for="address">Address Line1:</label>
+                                <input type="text" name="address" id="address1" required><br>
+                            </div>
+                            <div class="col">
+
+                                <label for="address">Address Line2:</label>
+                                <input type="text" name="address" id="address2" required><br>
+                            </div>
+                            <div class="col">
+                                <label for="city">City:</label>
+                                <input type="text" name="city" id="city" required><br>
+                            </div>
+                            <div class="col">
+                                <label for="state">State:</label>
+                                <input type="text" name="state" id="state" required><br>
+                            </div>
+                            
+                            <div class="col">
+
+                                <label for="zipcode">Zip Code:</label>
+                                <input type="text" name="zipcode" id="zipcode" required><br>
+                            </div>
+                            <a href="Mobiles.html" class="btn btn-primary" onclick="return validateForm()">Submit</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2023 Your Website</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline text-md-left">
+                        <li class="list-inline-item"><a
+                                href="https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer">About</a></li>
+                        <li class="list-inline-item"><a
+                                href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=200545940">Conditions</a>
+                        </li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/amazondotin/">Contact</a></li>
+                        <li class="list-inline-item"><a
+                                href="https://www.amazon.in/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=200534380">Privacy
+                                Policy</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript">
+    function validateForm() {
+
+        var name = document.forms["myForm"]["name"].value;
+        var email = document.forms["myForm"]["email"].value;
+        var password = document.forms["myForm"]["password"].value;
+        var address1 = document.forms["myForm"]["address"].value;
+        var address2 = document.forms["myForm"]["address"].value;
+        var state = document.forms["myForm"]["city"].value;
+        var state = document.forms["myForm"]["state"].value;
+        var zipcode = document.forms["myForm"]["zipcode"].value;
+
+
+        var namePattern = /^[a-zA-Z\s]+$/;
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        var passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+        var zipcodePattern = /^\d{6}$/;
+
+
+        if (!name.match(namePattern)) {
+            alert("Please enter a valid name.");
+            return false;
+        }
+
+
+        if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+
+
+        // if (!password.match(passwordPattern)) {
+        //     alert("Password must be at least 8 characters long and contain at least one digit, one lowercase letter, and one uppercase letter.");
+        //     return false;
+        // }
+
+
+        if (address.trim() === "") {
+            alert("Please enter an address.");
+            return false;
+        }
+
+        if (city.trim() === "") {
+            alert("Please enter a City.");
+            return false;
+        }
+
+
+
+        if (state.trim() === "") {
+            alert("Please enter a state.");
+            return false;
+        }
+
+
+        if (!zipcode.match(zipcodePattern)) {
+            alert("Please enter a valid zip code.");
+            return false;
+        }
+
+
+        return true;
+    }
+</script>
+
+</html>
